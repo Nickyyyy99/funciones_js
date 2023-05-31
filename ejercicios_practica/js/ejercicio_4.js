@@ -30,5 +30,13 @@ en consola la lista
 */
 
 // Definir y crear la función antes de esta llamada
-invitados = generarInvitados();
-console.log(`Mis invitados: ${invitados}`)
+function generarInvitados2() {
+let invitado1 = (prompt("Ingrese el nombre del primer invitado"))
+let invitado2 = (prompt("Ingrese el nombre del segundo invitado"))
+let invitado3 = (prompt("Ingrese el nombre del tercer invitado"))
+let invitados = (invitado1 + " " + invitado2 + " " + invitado3)
+return "Lista de invitados: " + invitados;
+}
+const invitacion = generarInvitados2();
+console.log(invitacion);
+
